@@ -4,6 +4,60 @@
 .CalcDisplay {
   height: 40px;
   font-size: 2em;
-  background: aqua;
-  color: black;
+  background-color: aqua;
+  color: red;
 }
+ .CalcContainer {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  width: 700px;
+  text-align: center;
+  border: 10px solid black;
+  background: pink;
+  border-radius: 10px;
+  
+ }
+
+ .ButtonContainer{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(60px, auto);
+
+ }
+ body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  animation: changeColor 5s linear infinite; /* Change color every 4 seconds */
+  background-color: #3498db; /* Initial background color */
+  color: #fff; /* Text color */
+}
+
+@keyframes changeColor {
+  0%, 100% {
+    background-color: #0f0bea; /* Initial color */
+  }
+  25% {
+    background-color: peachpuff; /* Color 1 */
+  }
+  50% {
+    background-color: gray; /* Color 2 */
+  }
+  75% {
+    background-color: violet; /* Color 3 */
+  }
+}
+
+
+.Surname {
+  display:flex;
+  justify-content: center;
+
+}
+
